@@ -27,8 +27,7 @@ public class createJDBC {
         //---query for updating the values
       // String query2 = "update student set sid= 7 where sid=8";
 
-        //---Query for deleting the value from the table
-
+        //---query for deleting the value from the table
         String query3= "delete from student where sid= 7";
 
 
@@ -40,13 +39,13 @@ public class createJDBC {
 
         // Step: Execute the statement
 
-       // boolean status=st.execute(query); // this method return boolean because this will provide true/false statement that your data in inserted or not you are not fetching its just you are inserting the data in the table
+        // boolean status=st.execute(query); // this method return boolean because this will provide true/false statement that your data in inserted or not you are not fetching its just you are inserting the data in the table
         // boolean status2=st.execute(query2);
         boolean status3 = st.execute(query3);
         System.out.println(status3);
 
 
-        //Step: losing the connection
+        //Step: Closing the connection
         con.close();
         System.out.println("Closing the connection");
 
