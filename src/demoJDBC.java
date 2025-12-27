@@ -28,7 +28,7 @@ public class demoJDBC {
      String url="jdbc:postgresql://localhost:5432/Demo";  // java connecting with jdbc, then postgresql data name, then the IP address
      String uname ="postgres";
      String pass= "2022";
-Connection con = DriverManager.getConnection(url,uname,pass);
+     Connection con = DriverManager.getConnection(url,uname,pass);
 
      //String query = "select sname from student where sid = 1";  // creating the query to get one row
        String query = "select * from student";

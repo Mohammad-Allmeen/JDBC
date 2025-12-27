@@ -22,13 +22,13 @@ public class createJDBC {
         Connection con = DriverManager.getConnection(url,uname,pass);
 
         //---query for inserting the values
-      //  String query = "insert into student values(7, 'Ariba', 95)";
+       // String query = "insert into student values(8, 'Arhan', 92)";
 
         //---query for updating the values
-      // String query2 = "update student set sid= 7 where sid=8";
+      String query2 = "update student set sid= 8 where sid=9";
 
         //---query for deleting the value from the table
-        String query3= "delete from student where sid= 7";
+      //  String query3= "delete from student where sid= 7";
 
 
         System.out.println("Connection established");
@@ -39,10 +39,10 @@ public class createJDBC {
 
         // Step: Execute the statement
 
-        // boolean status=st.execute(query); // this method return boolean because this will provide true/false statement that your data in inserted or not you are not fetching its just you are inserting the data in the table
-        // boolean status2=st.execute(query2);
-        boolean status3 = st.execute(query3);
-        System.out.println(status3);
+         //boolean status=st.execute(query); // this method return boolean because this will provide true/false statement that your data in inserted or not you are not fetching its just you are inserting the data in the table
+        boolean status2=st.execute(query2);
+        //boolean status3 = st.execute(query3);
+        System.out.println(status2);
 
 
         //Step: Closing the connection
